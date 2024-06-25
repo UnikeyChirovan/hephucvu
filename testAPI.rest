@@ -1,0 +1,44 @@
+// Gọi đến Server:
+// <METHOD> <Địa chỉ Server:port>
+// Gọi đến Server với phương thức GET (Lấy dữ liệu từ Server)
+GET http://localhost:8080
+// Gọi đến Server với phương thức POST 
+// (Gởi dữ liệu từ Client về Server, Server Xử lý Dữ liệu và Trả kết quả về lại cho Client)
+###
+POST http://localhost:8080
+
+// Lấy Dữ liệu Tivi
+###
+GET http://localhost:8080/listTIVI
+
+// Lấy Dữ liệu Mobile
+###
+GET http://localhost:8080/listMOBILE
+
+// Lấy Dữ liệu Food
+###
+GET http://localhost:8080/listFOOD
+
+// Lấy Dữ liệu Student
+###
+GET http://localhost:8080/listSTUDENT
+
+// Lấy Dữ liệu User
+###
+GET http://localhost:8080/listUSER
+
+// Lấy Dữ liệu Food
+###
+GET http://localhost:8080/listSTORE
+//===================================================================
+
+// Gởi dữ liệu từ Client về Server, (userName,passWork) 
+// Server Xử lý Dữ liệu và Trả kết quả về lại cho Client)
+###
+POST http://localhost:8080/LOGIN
+Content-Type: application/json
+
+{
+    "userName":"natuan@gmail.com",
+    "userPwd":"tuan@1965"
+}
